@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" defer />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="header" class="header">
+        <!-- Section with current temp, sunset, sunrise times -->
+        <div class="vertcont">
+        <button id="myLocation">current city</button>
+
+        <!-- Search city -->
+        <input type="text" id="search" class="search" placeholder="Enter a city name">
+        <button id="searchbtn" class="inpstyle">Search</button>
+        <button id="clearbtn" class="inpstyle">Clear</button>
+      </div>
+        <div id="typeTemp" class="type-temp"></div>
+        <div id="sunrise" class="sunrise"></div>
+        <div id="sunset" class="sunset"></div>
+      </div>
+
+      <div id="weatherDescription" class="weather-description">
+        <div class="grid-container">
+          <div id="weatherImg" class="weather-img"></div>
+        </div>
+        <div id="weatherText" class="weather-text"></div>
+      </div>
+
+    <!-- Section with five day forecast -->
+    <div id="fiveDaysForecast" class="five-days-forecast"></div>
+  </div>
+
+    <script
+      src="https://kit.fontawesome.com/8e045d922d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
